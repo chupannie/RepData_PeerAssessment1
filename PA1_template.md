@@ -41,6 +41,7 @@ ggplot(steps_by_day, aes(x = steps)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![Histogram](figures/plot1.jpeg)
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -73,6 +74,7 @@ ggplot(steps_by_interval, aes(x = interval, y = steps)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![Time Series Plot](figures/plot2.jpeg)
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -134,7 +136,7 @@ ggplot(steps_by_day, aes(x = steps)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
-
+![Histogram](figures/plot3.jpeg)
 
 ```r
 mean(steps_by_day$steps)
@@ -204,3 +206,4 @@ ggplot(data_weekdays, aes(x=interval,y=steps)) +
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-18-1.png) 
+![Panel Plot](figures/plot4.jpeg)

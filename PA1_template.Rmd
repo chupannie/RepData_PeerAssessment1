@@ -32,6 +32,7 @@ ggplot(steps_by_day, aes(x = steps)) +
   labs(title="Histogram of Steps Taken Per Day",
        x = "Number of Steps Per Day", y = "Frequency (Number of hours)")
 ```
+![Histogram](figures/plot1.jpeg)
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
 ```{r echo=TRUE} 
@@ -48,6 +49,7 @@ ggplot(steps_by_interval, aes(x = interval, y = steps)) +
   geom_line(color="blue", size=2) +
   labs(title="Average Daily Activity Pattern", x="Time Interval",y="Average Number of Steps")
 ```
+![Time Series Plot](figures/plot2.jpeg)
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r echo=TRUE} 
@@ -90,7 +92,7 @@ ggplot(steps_by_day, aes(x = steps)) +
   labs(title="Histogram of Steps Taken Per Day",
        x = "Number of Steps Per Day", y = "Frequency (Number of hours)")
 ```
-
+![Histogram](figures/plot3.jpeg)
 ```{r echo=TRUE}
 mean(steps_by_day$steps)
 median(steps_by_day$steps)
@@ -142,3 +144,4 @@ ggplot(data_weekdays, aes(x=interval,y=steps)) +
   facet_wrap(~ dayofweek, nrow=2, ncol=1) +
   labs(x="Time Interval", y="Number of Steps")
 ```
+![Panel Plot](figures/plot4.jpeg)
